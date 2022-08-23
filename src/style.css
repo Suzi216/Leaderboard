@@ -1,0 +1,12 @@
+body {
+  background-color: bisque;
+}
+
+#btn {
+  float: right;
+}
+
+.left-side,
+.right-side {
+  width: 33.33%;
+}
