@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # LEADERBOARD
-> This is a project that create a simple todo tool that help you organize your day. This is build using ES6 and webpack.
 
 >The leaderboard is  that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
@@ -19,7 +18,7 @@
 **Install the node.js**
 **Initialize the package using this command npm init -y**
 ** Install and run all the linters from this link:https://github.com/microverseinc/linters-config/tree/master/html-css-js**
-** Add the webpack configuration.**
+**Add the webpack configuration.**
 **Launch the project using this command npm run build**
 
 ## Live Demo (if available)
