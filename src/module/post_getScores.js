@@ -2,7 +2,7 @@
 const name = document.getElementById('names');
 const scores = document.getElementById('scores');
 const error = document.querySelector('.error');
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2NJNJ/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2NJNf/scores';
 export const postScore = async () => {
   const namevl = name.value;
   const scorevl = scores.value;
