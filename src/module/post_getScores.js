@@ -1,6 +1,6 @@
 const name= document.getElementById("names");
 const scores= document.getElementById("scores");
-const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores`;
+const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2GJGJ/scores`;
 // console.log(scores);
 export const postScore = async ()  => {
     const name_vl=name.value;
@@ -19,12 +19,14 @@ export const postScore = async ()  => {
           }),
       },
     );
-    const { result } = await response.json();
+    const  result  = await response.json();
     return result;
 }
 
-export const getScore = async () => {
-    const response= await fetch(
+export const getSc = async () => {
+    const data= await fetch(
       url,
     )
+    const res = await data.json();
+    return res;
 }
