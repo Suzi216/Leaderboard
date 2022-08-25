@@ -16,14 +16,19 @@
             <h3>Recent scores</h3>
             <button type="button" name="button" class="refresh">Refresh</button>
           </div>
+          <div class="error"></div>
           <ul class="border border-primary" id="lists">
           </ul>
         </div>
         <div class="right-side">
           <h3>Add your scores</h3>
           <form >
-            <input type="text" class="w-100" name="names" id="names" value="" placeholder="Your name" required><br> <br>
-            <input type="number" class="w-100" name="scores" id="scores" value="" placeholder="Your score" required><br> <br>
+            <label for="names" class="w-100" >
+              <input type="text" class="w-100" name="names" id="names" value="" placeholder="Your name" required></label>
+            <br>
+            <label for="scores" class="w-100">
+              <input type="number" class="w-100" name="scores" id="scores" value="" placeholder="Your score" required></label>
+            <br>
             <input type="button" id="btn" class="submits" name="button" value="submit" placeholder="submit">
           </form>
         </div>
