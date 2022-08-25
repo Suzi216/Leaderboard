@@ -5,24 +5,26 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
     <script src="../dist/main.js" defer></script>
+    <script src="https://use.fontawesome.com/d5ea62e6d5.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class=" container p-5 my-5 border border-secondary">
-      <h1>Leaderboard</h1>
+    <div class=" container p-5 my-5 border border-secondary bg">
+      <h1 class="headers">Voleyball Leaderboard</h1>
+      <i class="fa-solid fa-volleyball"></i>
       <div class="d-flex  my-5 justify-content-between flex-row">
         <div class="left-side">
           <div class="d-flex p-3  justify-content-between">
-            <h3>Recent scores</h3>
+            <h3 class="headers">Recent scores</h3>
             <button type="button" name="button" class="refresh">Refresh</button>
           </div>
           <div class="error"></div>
-          <ul class="border border-primary" id="lists">
+          <ul class="" id="lists">
           </ul>
         </div>
         <div class="right-side">
-          <h3>Add your scores</h3>
-          <form >
+          <h3 class="headers">Add your scores</h3>
+          <form class="my-4">
             <label for="names" class="w-100" >
               <input type="text" class="w-100" name="names" id="names" value="" placeholder="Your name" required></label>
             <br>
