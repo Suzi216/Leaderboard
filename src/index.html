@@ -14,19 +14,22 @@
         <div class="left-side">
           <div class="d-flex p-3  justify-content-between">
             <h3>Recent scores</h3>
-            <button type="button" name="button">Refresh</button>
+            <button type="button" name="button" class="refresh">Refresh</button>
           </div>
-          <ul class="border border-primary">
-            <li>Name: 100</li>
-            <li>Name: 100</li>
+          <div class="error"></div>
+          <ul class="border border-primary" id="lists">
           </ul>
         </div>
         <div class="right-side">
           <h3>Add your scores</h3>
-          <form class="submit" action="index.html" method="post">
-            <input type="text" class="w-100" name="" value="" placeholder="Your name"><br> <br>
-            <input type="text" class="w-100" name="" value="" placeholder="Your score"><br> <br>
-            <input type="button" id="btn" name="" value="submit" placeholder="submit">
+          <form >
+            <label for="names" class="w-100" >
+              <input type="text" class="w-100" name="names" id="names" value="" placeholder="Your name" required></label>
+            <br>
+            <label for="scores" class="w-100">
+              <input type="number" class="w-100" name="scores" id="scores" value="" placeholder="Your score" required></label>
+            <br>
+            <input type="button" id="btn" class="submits" name="button" value="submit" placeholder="submit">
           </form>
         </div>
       </div>
