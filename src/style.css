@@ -1,6 +1,3 @@
-body {
-  background-color: bisque;
-}
 
 #btn {
   float: right;
@@ -9,4 +6,42 @@ body {
 .left-side,
 .right-side {
   width: 33.33%;
+}
+
+#lists {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.bg {
+  background-image: url("/png.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li {
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: 200 !important;
+  font-size: 1.5em !important;
+}
+
+.headers,
+.refresh,
+.submits {
+  color: #f4a000;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f6df00, 0 0 50px #f6df00, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f6df00, 0 0 50px #f6df00, 0 0 70px #e60073;
+  }
 }
